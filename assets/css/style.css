@@ -94,13 +94,9 @@ main {
   flex: 1 1 70%;
   display: flex;
   align-items: center;
-  justify-content: space-between;
 }
 
 .p ul {
-  display: flex;
-  justify-content: space-between;
-  min-width: 300px;
 }
 
 .p ul li {
@@ -113,6 +109,10 @@ main {
   text-decoration: none;
   font-weight: bolder;
   color: var(--light);
+}
+
+.p ul li a:hover {
+  color: black;
 }
 
 @media screen and (max-width: 768px) {
