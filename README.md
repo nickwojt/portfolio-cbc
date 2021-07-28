@@ -4,4 +4,4 @@ In this project I used VSCode to code an index.html file styled with a reset.css
 
 Check it out here: https://nickwojt.github.io/portfolio-cbc/
 
-
+![Project](./pPortfolio.png "Completed Project")
