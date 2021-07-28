@@ -30,6 +30,7 @@ header {
 }
 h1 {
   font-size: 200%;
+  text-transform: uppercase;
 }
 nav ul {
   display: flex;
@@ -76,27 +77,29 @@ main {
   display: flex;
   justify-content: space-between;
   text-align: center;
-  height: 30vh;
+  height: fit-content;
   margin: 50px 0;
+  width: 100%;
 }
 
 .h2 {
   display: flex;
   flex: 1 1 30%;
+  width: 30%;
   justify-content: center;
   align-items: center;
   /* border-right: 5px solid var(--light); */
   font-size: 300%;
-  background-color: var(--light);
+  background-color: var(--background-1);
   border: 10px solid var(--dark);
+  color: var(--dark);
 }
 .p {
   flex: 1 1 70%;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
-}
-
-.p ul {
+  justify-content: center;
 }
 
 .p ul li {
@@ -115,6 +118,83 @@ main {
   color: black;
 }
 
+.first-project {
+  width: 30%;
+  height: 90%;
+}
+
+.first-project img {
+  width: 100%;
+  height: 100%;
+}
+
+.description {
+  position: relative;
+  left: -5px;
+  bottom: 90%;
+  background: var(--background-1);
+  width: 40%;
+  height: 20%;
+  border: 5px solid var(--dark);
+  color: var(--light);
+}
+.list {
+  align-items: center;
+  justify-content: space-around;
+}
+
+.projects-container {
+  flex: 1 1 70%;
+  width: 70%;
+  display: flex;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 30%;
+  margin: 10px 10px;
+}
+.card img {
+  width: 100%;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card-body {
+  padding: 5px 16px;
+}
+.card-body h3 {
+  font-size: 200%;
+}
+.card-text a {
+  text-decoration: none;
+  color: var(--light);
+}
+
+.card-text a:hover {
+  color: black;
+}
+
+.small {
+  display: flex;
+  flex-wrap: wrap;
+  width: 60%;
+}
+
+.card-small {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  margin: 10px 10px;
+  width: 45%;
+}
+
+.card-small img {
+  width: 100%;
+}
+
 @media screen and (max-width: 768px) {
   header {
     flex-direction: column;
@@ -130,4 +210,14 @@ main {
     border: 5px solid var(--dark);
     background-color: var(--light);
   } */
+  article {
+    display: none;
+  }
+  .list {
+    flex-flow: column;
+  }
+  .card {
+    flex-flow: column;
+    width: 100%;
+  }
 }
